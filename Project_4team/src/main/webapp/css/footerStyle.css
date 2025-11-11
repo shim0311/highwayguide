@@ -1,0 +1,167 @@
+/* Footer Styles */
+.site-footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    padding: 40px 0 20px 0;
+    margin-top: auto;
+    font-family: 'PretendardVariable', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+/* 왼쪽 영역 - 회사 정보 */
+.footer-left {
+    flex: 2;
+}
+
+.footer-logo h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 20px 0;
+}
+
+.footer-info {
+    margin-bottom: 20px;
+}
+
+.footer-info p {
+    font-size: 0.75rem;
+    line-height: 1.6;
+    color: #666;
+    margin: 8px 0;
+}
+
+.business-check {
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.business-check:hover {
+    color: #0056b3;
+}
+
+.footer-copyright p {
+    font-size: 0.75rem;
+    color: #999;
+    margin: 0;
+}
+
+/* 중앙 영역 - 인증 마크 */
+.footer-center {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.certification-marks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cert-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cert-logo {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: #333;
+}
+
+.cert-logo.iso {
+    background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+    color: white;
+    border: none;
+}
+
+.cert-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.cert-text span {
+    font-size: 0.7rem;
+    color: #666;
+    line-height: 1.3;
+}
+
+.cert-text span:first-child {
+    font-weight: 600;
+    color: #333;
+}
+
+
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-center {
+        flex: none;
+        width: 100%;
+    }
+
+    .footer-center {
+        justify-content: center;
+    }
+
+    .certification-marks {
+        align-items: center;
+    }
+
+    .cert-item {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-footer {
+        padding: 30px 0 15px 0;
+    }
+
+    .footer-container {
+        padding: 0 15px;
+        gap: 20px;
+    }
+
+    .footer-info p {
+        font-size: 0.7rem;
+    }
+
+    .cert-logo {
+        width: 40px;
+        height: 40px;
+        font-size: 0.7rem;
+    }
+
+    .cert-text span {
+        font-size: 0.65rem;
+    }
+}

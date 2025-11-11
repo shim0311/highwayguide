@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Shop">
+    <insert id="insert" parameterType="java.util.List">
+        insert into Shop (SAKey, ShopName)
+        values
+        <foreach collection="list" item="vo" separator=",">
+            (#{vo.SAKey}, #{vo.ShopName})
+        </foreach>
+    </insert>
+
+<delete id="delete">
+    delete from Shop
+</delete>
+    <select id="getShop" resultType="mybatis.vo.ShopVO" parameterType="Map">
+        select * from Shop where SAKey =#{idx}
+        <if test="text != null and text !=''">
+        and shopName like concat ('%', #{text}, '%')
+        </if>
+    </select>
+
+</mapper>

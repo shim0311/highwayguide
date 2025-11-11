@@ -1,0 +1,1538 @@
+[
+  {
+    "idx": 15,
+    "name": "천안삼거리휴게소(서울방향)",
+    "error": "Message: searchIframe\n",
+    "timestamp": "2025-08-19T14:07:59.461680"
+  },
+  {
+    "idx": 17,
+    "name": "천안호두휴게소(부산방향)",
+    "error": "Message: searchIframe\n",
+    "timestamp": "2025-08-19T14:08:06.957802"
+  },
+  {
+    "idx": 19,
+    "name": "청주휴게소(서울방향)",
+    "error": "Message: searchIframe\n",
+    "timestamp": "2025-08-19T14:08:14.478549"
+  },
+  {
+    "idx": 36,
+    "name": "황간휴게소(부산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbb020>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.098613"
+  },
+  {
+    "idx": 38,
+    "name": "황간휴게소(서울방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091b4380>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.106603"
+  },
+  {
+    "idx": 40,
+    "name": "추풍령휴게소(부산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091b56a0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.109718"
+  },
+  {
+    "idx": 42,
+    "name": "추풍령휴게소(서울방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091b69c0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.112599"
+  },
+  {
+    "idx": 44,
+    "name": "칠곡휴게소(부산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbaf10>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.116070"
+  },
+  {
+    "idx": 46,
+    "name": "칠곡휴게소(서울방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fb97b0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.119267"
+  },
+  {
+    "idx": 48,
+    "name": "경산휴게소(서울방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091b46b0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.123049"
+  },
+  {
+    "idx": 50,
+    "name": "평사휴게소(부산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091b7680>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.125907"
+  },
+  {
+    "idx": 52,
+    "name": "건천휴게소(서울방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f49e0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.128915"
+  },
+  {
+    "idx": 54,
+    "name": "건천휴게소(부산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091b4490>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.132366"
+  },
+  {
+    "idx": 55,
+    "name": "경주휴게소(부산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091b57b0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.136006"
+  },
+  {
+    "idx": 57,
+    "name": "언양휴게소(서울방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbaad0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.139284"
+  },
+  {
+    "idx": 59,
+    "name": "언양휴게소(부산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbbdf0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.142477"
+  },
+  {
+    "idx": 62,
+    "name": "양산휴게소(서울방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f5d00>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.146071"
+  },
+  {
+    "idx": 63,
+    "name": "진영휴게소(부산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbaad0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.149197"
+  },
+  {
+    "idx": 64,
+    "name": "진영휴게소(순천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091b57b0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.151997"
+  },
+  {
+    "idx": 71,
+    "name": "문산휴게소(순천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091b4490>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.155230"
+  },
+  {
+    "idx": 73,
+    "name": "사천휴게소(부산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f4c00>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.158391"
+  },
+  {
+    "idx": 74,
+    "name": "사천휴게소(순천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f6e00>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.161861"
+  },
+  {
+    "idx": 77,
+    "name": "섬진강휴게소(부산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091b4490>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.164946"
+  },
+  {
+    "idx": 78,
+    "name": "섬진강휴게소(순천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091b57b0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.167823"
+  },
+  {
+    "idx": 83,
+    "name": "거창한휴게소(옥포방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbaad0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.170959"
+  },
+  {
+    "idx": 84,
+    "name": "거창한휴게소(고서방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f49e0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.174043"
+  },
+  {
+    "idx": 87,
+    "name": "지리산휴게소(대구방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f7f00>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.178046"
+  },
+  {
+    "idx": 88,
+    "name": "지리산휴게소(광주방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbaf10>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.180951"
+  },
+  {
+    "idx": 92,
+    "name": "화성휴게소(서울방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fb97b0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.184071"
+  },
+  {
+    "idx": 93,
+    "name": "화성휴게소(목포방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091b46b0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.187123"
+  },
+  {
+    "idx": 98,
+    "name": "서산휴게소(목포방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091b78a0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.189954"
+  },
+  {
+    "idx": 100,
+    "name": "서산휴게소(서울방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109239260>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.193335"
+  },
+  {
+    "idx": 102,
+    "name": "대천휴게소(서울방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091b45a0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.196380"
+  },
+  {
+    "idx": 103,
+    "name": "대천휴게소(목포방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091b58c0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.199588"
+  },
+  {
+    "idx": 106,
+    "name": "군산휴게소(서울방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbacf0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.202131"
+  },
+  {
+    "idx": 108,
+    "name": "군산휴게소(목포방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f4c00>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.205252"
+  },
+  {
+    "idx": 110,
+    "name": "고창고인돌휴게소(목포방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923a580>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.214163"
+  },
+  {
+    "idx": 112,
+    "name": "고창고인돌휴게소(서울방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbb130>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.217960"
+  },
+  {
+    "idx": 115,
+    "name": "함평천지휴게소(시흥방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbb9b0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.221506"
+  },
+  {
+    "idx": 117,
+    "name": "함평천지휴게소(목포방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109238e20>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.225143"
+  },
+  {
+    "idx": 118,
+    "name": "익산미륵사지휴게소(천안방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923b680>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.228004"
+  },
+  {
+    "idx": 119,
+    "name": "익산미륵사지휴게소(순천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f7680>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.231315"
+  },
+  {
+    "idx": 122,
+    "name": "정읍녹두장군휴게소(천안방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923b020>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.234541"
+  },
+  {
+    "idx": 123,
+    "name": "정읍녹두장군휴게소(순천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1092388d0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.237631"
+  },
+  {
+    "idx": 126,
+    "name": "백양사휴게소(천안방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fba030>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.240402"
+  },
+  {
+    "idx": 127,
+    "name": "백양사휴게소(순천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbb350>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.243636"
+  },
+  {
+    "idx": 130,
+    "name": "곡성휴게소(천안방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f7020>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.246195"
+  },
+  {
+    "idx": 131,
+    "name": "곡성휴게소(순천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbae00>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.248748"
+  },
+  {
+    "idx": 134,
+    "name": "주암휴게소(순천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fb9bf0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.252029"
+  },
+  {
+    "idx": 135,
+    "name": "주암휴게소(천안방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109239370>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.255509"
+  },
+  {
+    "idx": 138,
+    "name": "순천휴게소(순천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923b130>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.257787"
+  },
+  {
+    "idx": 139,
+    "name": "하남드림휴게소",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f7460>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.260283"
+  },
+  {
+    "idx": 141,
+    "name": "이천쌀휴게소(하남방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923b790>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.263286"
+  },
+  {
+    "idx": 144,
+    "name": "이천휴게소(통영방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109238d10>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.266307"
+  },
+  {
+    "idx": 145,
+    "name": "음성휴게소(하남방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbbf00>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.269345"
+  },
+  {
+    "idx": 146,
+    "name": "음성휴게소(남이방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fba250>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.276087"
+  },
+  {
+    "idx": 149,
+    "name": "오창휴게소(하남방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f7240>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.279527"
+  },
+  {
+    "idx": 150,
+    "name": "오창휴게소(통영방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbb8a0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.282488"
+  },
+  {
+    "idx": 153,
+    "name": "인삼랜드휴게소(하남방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fba7a0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.285271"
+  },
+  {
+    "idx": 154,
+    "name": "금산인삼랜드휴게소(통영방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1092385a0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.289812"
+  },
+  {
+    "idx": 157,
+    "name": "덕유산휴게소(대전방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923aad0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.292868"
+  },
+  {
+    "idx": 158,
+    "name": "덕유산휴게소(통영방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f7130>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.295687"
+  },
+  {
+    "idx": 165,
+    "name": "산청휴게소(하남방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923bce0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.298847"
+  },
+  {
+    "idx": 166,
+    "name": "산청휴게소(통영방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923a8b0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.301290"
+  },
+  {
+    "idx": 169,
+    "name": "충주휴게소(양평방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109238380>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.306401"
+  },
+  {
+    "idx": 170,
+    "name": "충주휴게소(창원방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fba8b0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.312124"
+  },
+  {
+    "idx": 173,
+    "name": "선산휴게소(양평방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbbce0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.315759"
+  },
+  {
+    "idx": 174,
+    "name": "선산휴게소(마산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f4050>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.320672"
+  },
+  {
+    "idx": 177,
+    "name": "영산휴게소(창원방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fba8b0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.325290"
+  },
+  {
+    "idx": 179,
+    "name": "칠서휴게소(양평방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109238380>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.329010"
+  },
+  {
+    "idx": 181,
+    "name": "강릉대관령휴게소(강릉방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923a8b0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.334262"
+  },
+  {
+    "idx": 182,
+    "name": "강릉대관령휴게소(인천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923b9b0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.337676"
+  },
+  {
+    "idx": 186,
+    "name": "평창휴게소(인천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091ec7c0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.339910"
+  },
+  {
+    "idx": 188,
+    "name": "평창휴게소(강릉방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923ae00>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.343072"
+  },
+  {
+    "idx": 194,
+    "name": "횡성휴게소(강릉방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1092386b0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.345100"
+  },
+  {
+    "idx": 195,
+    "name": "횡성휴게소(인천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbbf00>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.347603"
+  },
+  {
+    "idx": 199,
+    "name": "문막휴게소(인천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fba250>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.350416"
+  },
+  {
+    "idx": 201,
+    "name": "문막휴게소(강릉방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091ec6b0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.353057"
+  },
+  {
+    "idx": 203,
+    "name": "여주휴게소(강릉방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbae00>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.356283"
+  },
+  {
+    "idx": 204,
+    "name": "여주휴게소(인천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fb9bf0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.358883"
+  },
+  {
+    "idx": 207,
+    "name": "용인휴게소(강릉방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109238af0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.361518"
+  },
+  {
+    "idx": 208,
+    "name": "용인휴게소(인천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923a7a0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.364373"
+  },
+  {
+    "idx": 211,
+    "name": "춘천휴게소(부산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091ec6b0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.367425"
+  },
+  {
+    "idx": 213,
+    "name": "홍천강휴게소(춘천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923b570>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.370899"
+  },
+  {
+    "idx": 217,
+    "name": "치악휴게소(부산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109238f30>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.373977"
+  },
+  {
+    "idx": 218,
+    "name": "치악휴게소(춘천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f48d0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.376606"
+  },
+  {
+    "idx": 221,
+    "name": "단양팔경휴게소(춘천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fba470>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.379163"
+  },
+  {
+    "idx": 222,
+    "name": "평택호휴게소",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbbce0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.381469"
+  },
+  {
+    "idx": 223,
+    "name": "단양팔경휴게소(부산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbb350>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.385024"
+  },
+  {
+    "idx": 225,
+    "name": "안동휴게소(부산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fba030>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.387750"
+  },
+  {
+    "idx": 226,
+    "name": "안동휴게소(춘천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109238160>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.390967"
+  },
+  {
+    "idx": 229,
+    "name": "군위휴게소(부산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109238050>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.393644"
+  },
+  {
+    "idx": 230,
+    "name": "군위휴게소(춘천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923bac0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.396341"
+  },
+  {
+    "idx": 233,
+    "name": "동해휴게소",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923bdf0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.399919"
+  },
+  {
+    "idx": 236,
+    "name": "장유휴게소(부산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109238c00>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.402554"
+  },
+  {
+    "idx": 238,
+    "name": "벌곡휴게소(대전방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f46b0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.405449"
+  },
+  {
+    "idx": 240,
+    "name": "벌곡휴게소(논산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fba140>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.407973"
+  },
+  {
+    "idx": 243,
+    "name": "현풍휴게소(대구방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbb460>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.410556"
+  },
+  {
+    "idx": 244,
+    "name": "현풍휴게소(창원방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbb460>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.413850"
+  },
+  {
+    "idx": 249,
+    "name": "동명휴게소(부산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fba140>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.416535"
+  },
+  {
+    "idx": 250,
+    "name": "동명휴게소(춘천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109238270>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.419251"
+  },
+  {
+    "idx": 253,
+    "name": "홍성휴게소(서울방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923a9c0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.422263"
+  },
+  {
+    "idx": 254,
+    "name": "홍성휴게소(목포방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923b680>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.424972"
+  },
+  {
+    "idx": 257,
+    "name": "영천휴게소(익산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091ed150>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.428310"
+  },
+  {
+    "idx": 258,
+    "name": "영천휴게소(포항방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923af10>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.430825"
+  },
+  {
+    "idx": 261,
+    "name": "서천휴게소(서울방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1092389e0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.437013"
+  },
+  {
+    "idx": 262,
+    "name": "서천휴게소(목포방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fba7a0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.439777"
+  },
+  {
+    "idx": 267,
+    "name": "구정휴게소(동해방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbbbd0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.442463"
+  },
+  {
+    "idx": 268,
+    "name": "문경휴게소(양평방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091ec270>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.445077"
+  },
+  {
+    "idx": 269,
+    "name": "함평나비휴게소(광주방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fba470>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.448225"
+  },
+  {
+    "idx": 270,
+    "name": "함평나비휴게소(무안방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbb570>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.451276"
+  },
+  {
+    "idx": 273,
+    "name": "문경휴게소(창원방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109238d10>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.454028"
+  },
+  {
+    "idx": 274,
+    "name": "구정휴게소(속초방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923b790>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.457045"
+  },
+  {
+    "idx": 277,
+    "name": "남성주참외휴게소(창원방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091ece20>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.459645"
+  },
+  {
+    "idx": 278,
+    "name": "남성주참외휴게소(양평방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923b130>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.462514"
+  },
+  {
+    "idx": 279,
+    "name": "속리산휴게소",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109239370>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.464996"
+  },
+  {
+    "idx": 280,
+    "name": "화서휴게소(상주)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbbf00>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.467909"
+  },
+  {
+    "idx": 285,
+    "name": "진안마이산휴게소(익산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fba250>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.470451"
+  },
+  {
+    "idx": 286,
+    "name": "진안마이산휴게소(장수방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091ec050>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.473553"
+  },
+  {
+    "idx": 288,
+    "name": "고성공룡나라휴게소(통영방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fba250>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.477554"
+  },
+  {
+    "idx": 289,
+    "name": "고성공룡나라휴게소대전방향",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbbf00>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.480233"
+  },
+  {
+    "idx": 292,
+    "name": "덕평휴게소",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109239370>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.482972"
+  },
+  {
+    "idx": 293,
+    "name": "청통휴게소(익산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923b130>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.485572"
+  },
+  {
+    "idx": 294,
+    "name": "와촌휴게소(포항방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091ecd10>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.488066"
+  },
+  {
+    "idx": 295,
+    "name": "괴산휴게소(양평방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091ec9e0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.491423"
+  },
+  {
+    "idx": 299,
+    "name": "원주휴게소(부산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923acf0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.494103"
+  },
+  {
+    "idx": 300,
+    "name": "원주휴게소(춘천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1092387c0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.496928"
+  },
+  {
+    "idx": 301,
+    "name": "옥계휴게소(속초방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fb9f20>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.499983"
+  },
+  {
+    "idx": 303,
+    "name": "괴산휴게소(마산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbbbd0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.502567"
+  },
+  {
+    "idx": 305,
+    "name": "남원휴게소(대구방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbacf0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.505589"
+  },
+  {
+    "idx": 306,
+    "name": "김천휴게소(서울방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fb99d0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.508409"
+  },
+  {
+    "idx": 311,
+    "name": "영주휴게소(부산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1092385a0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.511014"
+  },
+  {
+    "idx": 312,
+    "name": "영주휴게소(춘천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923aad0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.513616"
+  },
+  {
+    "idx": 313,
+    "name": "제천휴게소(춘천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091ec5a0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.516372"
+  },
+  {
+    "idx": 314,
+    "name": "예산휴게소(대전방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f5ae0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.519755"
+  },
+  {
+    "idx": 316,
+    "name": "예산휴게소(당진방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923b570>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.522457"
+  },
+  {
+    "idx": 318,
+    "name": "공주휴게소(대전방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109238f30>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.524902"
+  },
+  {
+    "idx": 320,
+    "name": "부여백제휴게소(공주방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fb9bf0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.527361"
+  },
+  {
+    "idx": 321,
+    "name": "부여백제휴게소(서천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbae00>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.529936"
+  },
+  {
+    "idx": 324,
+    "name": "공주휴게소(당진방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f69c0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.532793"
+  },
+  {
+    "idx": 326,
+    "name": "목감휴게소(서울방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fba7a0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.535869"
+  },
+  {
+    "idx": 328,
+    "name": "제천휴게소(부산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1092389e0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.538633"
+  },
+  {
+    "idx": 329,
+    "name": "의왕휴게소(일산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923af10>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.541302"
+  },
+  {
+    "idx": 331,
+    "name": "안성맞춤휴게소(평택방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923bac0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.543888"
+  },
+  {
+    "idx": 333,
+    "name": "안성맞춤휴게소(제천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f6140>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.546751"
+  },
+  {
+    "idx": 338,
+    "name": "양양임시휴게소",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923bbd0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.550064"
+  },
+  {
+    "idx": 339,
+    "name": "양양휴게소(동해방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923a8b0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.553034"
+  },
+  {
+    "idx": 341,
+    "name": "행담도휴게소",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbb570>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.556100"
+  },
+  {
+    "idx": 342,
+    "name": "김천휴게소(부산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fba9c0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.558688"
+  },
+  {
+    "idx": 344,
+    "name": "함안휴게소(부산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f6690>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.561229"
+  },
+  {
+    "idx": 347,
+    "name": "진주휴게소(부산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fba470>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.564115"
+  },
+  {
+    "idx": 348,
+    "name": "함안휴게소(순천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fb97b0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.566894"
+  },
+  {
+    "idx": 350,
+    "name": "서여주휴게소(양평방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109238d10>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.569455"
+  },
+  {
+    "idx": 351,
+    "name": "서여주휴게소(창원방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923b790>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.572752"
+  },
+  {
+    "idx": 355,
+    "name": "이서휴게소(순천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f5e10>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.575748"
+  },
+  {
+    "idx": 358,
+    "name": "이서휴게소(천안방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923bf00>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.578997"
+  },
+  {
+    "idx": 360,
+    "name": "오수휴게소(전주방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109238050>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.581783"
+  },
+  {
+    "idx": 361,
+    "name": "오수휴게소(광양방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109238160>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.584512"
+  },
+  {
+    "idx": 364,
+    "name": "황전휴게소(순천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fba580>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.587289"
+  },
+  {
+    "idx": 365,
+    "name": "황전휴게소(전주방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f6580>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.589839"
+  },
+  {
+    "idx": 371,
+    "name": "구리휴게소(퇴계원방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f6030>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.593082"
+  },
+  {
+    "idx": 372,
+    "name": "통도사휴게소(부산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f5ae0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.595979"
+  },
+  {
+    "idx": 379,
+    "name": "신풍휴게소(당진방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f4380>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.598862"
+  },
+  {
+    "idx": 380,
+    "name": "신풍휴게소(상주방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fba8b0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.601346"
+  },
+  {
+    "idx": 381,
+    "name": "면천휴게소(상주방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbb8a0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.604100"
+  },
+  {
+    "idx": 382,
+    "name": "면천휴게소(당진방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbb790>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.607035"
+  },
+  {
+    "idx": 383,
+    "name": "청양임시휴게소(서천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbaf10>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.609577"
+  },
+  {
+    "idx": 384,
+    "name": "청양임시휴게소(공주방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f4270>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.612501"
+  },
+  {
+    "idx": 385,
+    "name": "상주휴게소(청주방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f67a0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.615241"
+  },
+  {
+    "idx": 386,
+    "name": "상주휴게소(상주방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f6470>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.618040"
+  },
+  {
+    "idx": 389,
+    "name": "영광휴게소(목포방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f6690>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.621272"
+  },
+  {
+    "idx": 392,
+    "name": "관촌휴게소(전주방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f69c0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.623853"
+  },
+  {
+    "idx": 393,
+    "name": "관촌휴게소(광양방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f5480>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.626404"
+  },
+  {
+    "idx": 394,
+    "name": "완주휴게소(익산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbae00>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.628933"
+  },
+  {
+    "idx": 395,
+    "name": "완주휴게소(포항방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbb790>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.631383"
+  },
+  {
+    "idx": 396,
+    "name": "성주휴게소(창원방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923bdf0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.634519"
+  },
+  {
+    "idx": 397,
+    "name": "성주휴게소(양평방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fba580>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.637038"
+  },
+  {
+    "idx": 400,
+    "name": "보성녹차휴게소(광양방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f45a0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.639572"
+  },
+  {
+    "idx": 401,
+    "name": "보성녹차휴게소(목포방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f5bf0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.642454"
+  },
+  {
+    "idx": 404,
+    "name": "옥천만남휴게소",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f5e10>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.645841"
+  },
+  {
+    "idx": 406,
+    "name": "영암휴게소(부산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091ed480>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.648406"
+  },
+  {
+    "idx": 407,
+    "name": "영암휴게소(목포방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f7790>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.651997"
+  },
+  {
+    "idx": 408,
+    "name": "기흥복합휴게소",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f4160>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.654597"
+  },
+  {
+    "idx": 409,
+    "name": "마장휴게소",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f47c0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.657323"
+  },
+  {
+    "idx": 413,
+    "name": "금왕휴게소(평택방면)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fb9e10>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.660153"
+  },
+  {
+    "idx": 414,
+    "name": "금왕휴게소(제천방면)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091ec9e0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.663113"
+  },
+  {
+    "idx": 418,
+    "name": "강천산휴게소(대구방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fba690>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.665868"
+  },
+  {
+    "idx": 419,
+    "name": "천등산휴게소(제천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f4e20>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.669457"
+  },
+  {
+    "idx": 420,
+    "name": "천등산휴게소평택방향",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f5040>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.671900"
+  },
+  {
+    "idx": 436,
+    "name": "강천산휴게소(광주방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f7570>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.674629"
+  },
+  {
+    "idx": 439,
+    "name": "남원휴게소(광주방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091ec7c0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.678968"
+  },
+  {
+    "idx": 440,
+    "name": "외동휴게소(포항방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f5e10>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.681912"
+  },
+  {
+    "idx": 441,
+    "name": "외동휴게소(울산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f5bf0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.685323"
+  },
+  {
+    "idx": 444,
+    "name": "산삼골휴게소(광주방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f45a0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.688028"
+  },
+  {
+    "idx": 445,
+    "name": "산삼골휴게소(대구방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fba580>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.690769"
+  },
+  {
+    "idx": 446,
+    "name": "논공휴게소(대구방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091ec050>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.694032"
+  },
+  {
+    "idx": 447,
+    "name": "논공휴게소(광주방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fb97b0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.696877"
+  },
+  {
+    "idx": 454,
+    "name": "가평휴게소(서울방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbaf10>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.699597"
+  },
+  {
+    "idx": 455,
+    "name": "가평휴게소(춘천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f4270>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.702406"
+  },
+  {
+    "idx": 456,
+    "name": "오산휴게소(과천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f67a0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.704885"
+  },
+  {
+    "idx": 457,
+    "name": "오산휴게소(동탄방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923b9b0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.707474"
+  },
+  {
+    "idx": 458,
+    "name": "송산포도휴게소",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923b680>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.711121"
+  },
+  {
+    "idx": 459,
+    "name": "정안알밤휴게소(천안방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f5f20>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.713668"
+  },
+  {
+    "idx": 460,
+    "name": "정안알밤휴게소(순천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f58c0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.717146"
+  },
+  {
+    "idx": 461,
+    "name": "이인휴게소(천안방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbacf0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.719951"
+  },
+  {
+    "idx": 462,
+    "name": "탄천휴게소(순천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fb9d00>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.722624"
+  },
+  {
+    "idx": 469,
+    "name": "양주휴게소(일산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fb9f20>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.725822"
+  },
+  {
+    "idx": 477,
+    "name": "청도새마을휴게소(대구방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbbbd0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.728653"
+  },
+  {
+    "idx": 478,
+    "name": "청도새마을휴게소(부산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f59d0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.731210"
+  },
+  {
+    "idx": 481,
+    "name": "장안휴게소(부산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f7130>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.734240"
+  },
+  {
+    "idx": 482,
+    "name": "장안휴게소(울산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10923b680>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.736859"
+  },
+  {
+    "idx": 483,
+    "name": "영종대교휴게소",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x109299150>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.740190"
+  },
+  {
+    "idx": 487,
+    "name": "양평휴게소(광주방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f6cf0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.742809"
+  },
+  {
+    "idx": 488,
+    "name": "양평휴게소(원주방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f5590>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.745837"
+  },
+  {
+    "idx": 491,
+    "name": "광주휴게소(광주방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fba250>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.750541"
+  },
+  {
+    "idx": 492,
+    "name": "광주휴게소(원주방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbb790>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.753155"
+  },
+  {
+    "idx": 495,
+    "name": "의성휴게소(청주방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10929a250>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.755946"
+  },
+  {
+    "idx": 496,
+    "name": "의성휴게소(영덕방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fbacf0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.758716"
+  },
+  {
+    "idx": 499,
+    "name": "점곡휴게소(상주방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f58c0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.761421"
+  },
+  {
+    "idx": 500,
+    "name": "점곡휴게소(영덕방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f5f20>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.763812"
+  },
+  {
+    "idx": 501,
+    "name": "양북휴게소(포항방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f6690>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.766873"
+  },
+  {
+    "idx": 502,
+    "name": "양북휴게소(울산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10929b350>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.770398"
+  },
+  {
+    "idx": 503,
+    "name": "청송휴게소(청주방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091eecf0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.773373"
+  },
+  {
+    "idx": 504,
+    "name": "청송휴게소(영덕방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091ef460>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.775936"
+  },
+  {
+    "idx": 509,
+    "name": "홍천휴게소(서울방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f7350>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.778531"
+  },
+  {
+    "idx": 510,
+    "name": "홍천휴게소(양양방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f5260>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.781103"
+  },
+  {
+    "idx": 513,
+    "name": "내린천휴게소(양양방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f4c00>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.784870"
+  },
+  {
+    "idx": 516,
+    "name": "낙동강의성휴게소(영천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091ef460>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.787908"
+  },
+  {
+    "idx": 517,
+    "name": "낙동강구미휴게소(상주방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091eecf0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.790971"
+  },
+  {
+    "idx": 520,
+    "name": "군위영천휴게소(영천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f4c00>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.794960"
+  },
+  {
+    "idx": 521,
+    "name": "삼국유사군위휴게소(상주방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f5260>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.797601"
+  },
+  {
+    "idx": 524,
+    "name": "의정부휴게소(구리방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f7350>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.801741"
+  },
+  {
+    "idx": 526,
+    "name": "구리포천남양주별내휴게소",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091ee140>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.804375"
+  },
+  {
+    "idx": 530,
+    "name": "시흥하늘휴게소",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091ef570>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.807081"
+  },
+  {
+    "idx": 548,
+    "name": "김해금관가야휴게소",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091ecaf0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.810984"
+  },
+  {
+    "idx": 551,
+    "name": "함양휴게소(대전방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f5f20>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.813583"
+  },
+  {
+    "idx": 552,
+    "name": "함양휴게소(통영방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f58c0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.817222"
+  },
+  {
+    "idx": 554,
+    "name": "매송휴게소(서울방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f56a0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.820279"
+  },
+  {
+    "idx": 555,
+    "name": "매송휴게소(목포방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f6f10>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.823631"
+  },
+  {
+    "idx": 572,
+    "name": "평택휴게소",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091ece20>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.827220"
+  },
+  {
+    "idx": 575,
+    "name": "장흥정남진휴게소",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091eee00>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.829531"
+  },
+  {
+    "idx": 577,
+    "name": "울주휴게소(함양방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091edbf0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.833169"
+  },
+  {
+    "idx": 578,
+    "name": "울주휴게소(울산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091edf20>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.838853"
+  },
+  {
+    "idx": 581,
+    "name": "문의청남대휴게소(청주방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091ec160>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.842237"
+  },
+  {
+    "idx": 582,
+    "name": "문의청남대휴게소(영덕방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091ecaf0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.844966"
+  },
+  {
+    "idx": 585,
+    "name": "부안고려청자휴게소(서울방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f6be0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.847188"
+  },
+  {
+    "idx": 586,
+    "name": "부안고려청자휴게소(목포방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f49e0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.850540"
+  },
+  {
+    "idx": 589,
+    "name": "안산휴게소",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f45a0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.853576"
+  },
+  {
+    "idx": 592,
+    "name": "서부산휴게소",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f5bf0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.856301"
+  },
+  {
+    "idx": 594,
+    "name": "춘향휴게소(순천방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091ecc00>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.858959"
+  },
+  {
+    "idx": 595,
+    "name": "춘향휴게소(완주방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091ef790>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.861458"
+  },
+  {
+    "idx": 598,
+    "name": "남한강휴게소",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091ed6a0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.864251"
+  },
+  {
+    "idx": 601,
+    "name": "밀양영남루휴게소(함양방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x108fb9bf0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.867324"
+  },
+  {
+    "idx": 602,
+    "name": "밀양영남루휴게소(울산방향)",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091edd00>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.869985"
+  },
+  {
+    "idx": 605,
+    "name": "처인휴게소",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091efbd0>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.872704"
+  },
+  {
+    "idx": 608,
+    "name": "고삼호수휴게소",
+    "error": "HTTPConnectionPool(host='localhost', port=59665): Max retries exceeded with url: /session/cf37d1a7502a5e4f9231bc42aef3952b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1091f7130>: Failed to establish a new connection: [Errno 61] Connection refused'))",
+    "timestamp": "2025-08-19T14:09:04.875316"
+  }
+]

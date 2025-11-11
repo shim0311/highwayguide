@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="restinfo">
+    <insert id="signUp" parameterType="Map">
+        insert into User (ID, NickName, Pwd, Authority,Name, platform, Cancel)
+        values (#{ID}, #{NickName}, #{Pwd}, 0,#{Name}, #{platform}, 0)
+
+    </insert>
+    <select id="selectID" resultType="mybatis.vo.UserVO" parameterType="Map">
+        select * from User where ID =#{email} and platform=#{platform} and Cancel=0
+    </select>
+
+    <select id="searchNickName" parameterType="String" resultType="String">
+        select NickName from User where NickName like concat('%', #{NickName}, '%')
+    </select>
+
+</mapper>

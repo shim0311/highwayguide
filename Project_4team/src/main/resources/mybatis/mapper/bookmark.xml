@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="bookmark">
+    <select id="isBookmarked" parameterType="Map" resultType="int">
+        select * from BookMark
+        WHERE UserKey=#{userKey} and SAKey=#{saKey}
+    </select>
+    <insert id="add" parameterType="Map">
+        INSERT INTO BookMark (UserKey, SAKey)
+        VALUES (#{userKey}, #{saKey})
+    </insert>
+
+    <delete id="delete" parameterType="Map">
+        DELETE FROM BookMark
+        WHERE UserKey = #{userKey} AND SAKey = #{saKey}
+    </delete>
+
+    <select id="getBookmarkedSaKeys" parameterType="String" resultType="String">
+        SELECT SAKey FROM BookMark
+        WHERE UserKey = #{userKey}
+        ORDER BY SAKey
+    </select>
+
+</mapper>

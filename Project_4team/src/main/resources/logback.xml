@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- 콘솔 출력 설정 -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- MyBatis 로그 레벨 설정 -->
+    <logger name="org.apache.ibatis" level="WARN"/>
+    <logger name="org.apache.ibatis.logging" level="WARN"/>
+    <logger name="org.apache.ibatis.datasource" level="WARN"/>
+    <logger name="org.apache.ibatis.transaction" level="WARN"/>
+    
+    <!-- SQL 매퍼 로그 레벨 설정 (SA.inBounds 등) -->
+    <logger name="SA" level="WARN"/>
+    <logger name="serviceArea" level="WARN"/>
+    <logger name="restinfo" level="WARN"/>
+    <logger name="login" level="WARN"/>
+    <logger name="signUp" level="WARN"/>
+    <logger name="shop" level="WARN"/>
+
+    <!-- 루트 로그 레벨 -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+</configuration>

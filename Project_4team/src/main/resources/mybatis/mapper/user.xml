@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="User">
+
+    <select id="getPlatformCount" resultType="int" parameterType="String">
+        select count(*) from User where Platform = #{str}
+    </select>
+
+    <update id="update" parameterType="Map">
+        UPDATE User
+        SET
+        NickName = #{nickName},
+        Interest = #{favoriteSeason},
+        Home=#{home}
+        WHERE
+        ID = #{ID}
+        AND Platform = #{platform}
+        AND Cancel=0
+    </update>
+
+    <select id="isNicknameTaken" parameterType="String" resultType="int">
+        SELECT COUNT(*) FROM User WHERE NickName = #{nickName}
+    </select>
+
+    <update id="deactivateAccount" parameterType="Map">
+        UPDATE User SET
+        Cancel = 1 WHERE
+        ID = #{ID}
+        AND Platform = #{platform}
+    </update>
+
+    <select id="getAllUsers" resultType="mybatis.vo.UserVO">
+        select * from User where Authority = 0 and Cancel = 0
+    </select>
+
+    <update id="deactivateAccountByNickName" parameterType="String">
+        UPDATE User SET
+        Cancel = 1 WHERE
+        NickName = #{str}
+    </update>
+
+    <select id="checkAccountByEmail" resultType="int" parameterType="String">
+        select Idx from User where ID = #{email} and Platform = 'ORIGIN'
+    </select>
+
+    <update id="changePwd" parameterType="map">
+        UPDATE User SET
+        Pwd = #{password} WHERE
+        Idx = #{Idx}
+    </update>
+</mapper>

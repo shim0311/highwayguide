@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="SA">
+    <!-- ServiceArea와 Gas를 조인하는 resultMap -->
+    <resultMap id="ServiceAreaWithGasMap" type="mybatis.vo.ServiceAreaVO">
+        <!-- ServiceArea 기본 필드들 -->
+        <id property="Idx" column="Idx"/>
+        <result property="SAName" column="SAName"/>
+        <result property="SADirection" column="SADirection"/>
+        <result property="WayNum" column="WayNum"/>
+        <result property="CompactParking" column="CompactParking"/>
+        <result property="LargeParking" column="LargeParking"/>
+        <result property="DisabledParking" column="DisabledParking"/>
+        <result property="Address" column="Address"/>
+        <result property="Tel" column="Tel"/>
+        <result property="Lat" column="Lat"/>
+        <result property="Lng" column="Lng"/>
+        <result property="ShopCode" column="ShopCode"/>
+        <result property="Convenience" column="Convenience"/>
+        <result property="Star" column="Star"/>
+        <result property="AiComment" column="AiComment"/>
+        
+        <!-- Gas 정보를 gasInfo에 매핑 -->
+        <association property="gasInfo" javaType="mybatis.vo.GasVO">
+            <id property="SAKey" column="SAKey"/>
+            <result property="Gasoline" column="Gasoline"/>
+            <result property="Disel" column="Disel"/>
+            <result property="LPG" column="LPG"/>
+        </association>
+    </resultMap>
+
+    <!-- ServiceArea, Gas, Menu를 모두 조인하는 resultMap -->
+    <resultMap id="ServiceAreaWithGasAndMenuMap" type="mybatis.vo.ServiceAreaVO">
+        <!-- ServiceArea 기본 필드들 -->
+        <id property="Idx" column="Idx"/>
+        <result property="SAName" column="SAName"/>
+        <result property="SADirection" column="SADirection"/>
+        <result property="WayNum" column="WayNum"/>
+        <result property="CompactParking" column="CompactParking"/>
+        <result property="LargeParking" column="LargeParking"/>
+        <result property="DisabledParking" column="DisabledParking"/>
+        <result property="Address" column="Address"/>
+        <result property="Tel" column="Tel"/>
+        <result property="Lat" column="Lat"/>
+        <result property="Lng" column="Lng"/>
+        <result property="ShopCode" column="ShopCode"/>
+        <result property="Convenience" column="Convenience"/>
+        <result property="Star" column="Star"/>
+        <result property="AiComment" column="AiComment"/>
+        
+        <!-- Gas 정보를 gasInfo에 매핑 -->
+        <association property="gasInfo" javaType="mybatis.vo.GasVO">
+            <id property="SAKey" column="GasSAKey"/>
+            <result property="Gasoline" column="Gasoline"/>
+            <result property="Disel" column="Disel"/>
+            <result property="LPG" column="LPG"/>
+        </association>
+        
+        <!-- Menu 정보를 Menulist에 매핑 -->
+        <collection property="Menulist" ofType="mybatis.vo.MenuVO">
+            <id property="Idx" column="MenuIdx"/>
+            <result property="SAKey" column="SAKey"/>
+            <result property="FoodName" column="FoodName"/>
+            <result property="Price" column="Price"/>
+            <result property="Season" column="Season"/>
+            <result property="Recommend" column="Recommend"/>
+            <result property="Best" column="Best"/>
+            <result property="Premium" column="Premium"/>
+        </collection>
+    </resultMap>
+    <select id="all" resultType="mybatis.vo.ServiceAreaVO">
+        select * from ServiceArea
+    </select>
+
+    <select id="search" parameterType="mybatis.vo.ServiceAreaVO" resultType="mybatis.vo.ServiceAreaVO">
+        select * from ServiceArea where Idx = #{idx}
+    </select>
+
+    <update id="xY" parameterType="Map">
+        update ServiceArea SET
+        lat = #{lat},
+        lng = #{lng}
+        WHERE
+        Idx = #{idx}
+    </update>
+
+    <insert id="insert" parameterType="mybatis.vo.ServiceAreaVO" useGeneratedKeys="true" keyProperty="Idx">
+        insert into ServiceArea (Idx, SAName, SADirection, WayNum, CompactParking, LargeParking, DisabledParking,
+        Address, Lat, Lng, Tel, ShopCode)
+        values
+        (#{Idx}, #{SAName}, #{SADirection}, #{WayNum}, #{CompactParking}, #{LargeParking},
+        #{DisabledParking}, #{Address}, #{Lat}, #{Lng}, #{Tel}, #{ShopCode})
+    </insert>
+
+    <select id="inBounds" resultType="mybatis.vo.ServiceAreaVO" parameterType="Map">
+        SELECT * FROM ServiceArea
+        WHERE Lat BETWEEN #{swLat} AND #{neLat}
+        AND Lng BETWEEN #{swLng} AND #{neLng}
+    </select>
+
+    <update id="update" parameterType="mybatis.vo.ServiceAreaVO">
+        update ServiceArea
+        set
+        SAName = #{SAName},
+        SADirection = #{SADirection},
+        WayNum = #{WayNum},
+        CompactParking = #{CompactParking},
+        LargeParking = #{LargeParking},
+        DisabledParking = #{DisabledParking},
+        Address = #{Address},
+        <if test="lat != null and Lng != null">
+        Lat = #{Lat},
+        Lng = #{Lng},
+        </if>
+<!--        Tel = #{Tel},-->
+        ShopCode = #{ShopCode}
+        where
+        Idx = #{Idx}
+    </update>
+    
+    <!-- Excel 데이터로 별점과 편의시설 업데이트 -->
+    <update id="updateStarAndConvenience" parameterType="mybatis.vo.ServiceAreaVO">
+        UPDATE ServiceArea 
+        SET Star = #{Star}, 
+            Convenience = #{Convenience}
+        WHERE Idx = #{Idx}
+    </update>
+    
+    <!-- Excel 데이터로 별점, 편의시설, AI 코멘트 업데이트 -->
+    <update id="updateStarConvenienceAndAiComment" parameterType="mybatis.vo.ServiceAreaVO">
+        UPDATE ServiceArea 
+        SET Star = #{Star}, 
+            Convenience = #{Convenience},
+            AiComment = #{AiComment}
+        WHERE Idx = #{Idx}
+    </update>
+    
+    <!-- Excel 데이터로 AI 코멘트만 업데이트 -->
+    <update id="updateAiComment" parameterType="mybatis.vo.ServiceAreaVO">
+        UPDATE ServiceArea 
+        SET AiComment = #{AiComment}
+        WHERE Idx = #{Idx}
+    </update>
+    
+    <!-- Excel 데이터로 전화번호 업데이트 -->
+    <update id="updateTel" parameterType="mybatis.vo.ServiceAreaVO">
+        UPDATE ServiceArea 
+        SET Tel = #{Tel}
+        WHERE Idx = #{Idx}
+    </update>
+    
+    <!-- idx로 휴게소 조회 -->
+    <select id="getByIdx" resultType="mybatis.vo.ServiceAreaVO" parameterType="String">
+        SELECT * FROM ServiceArea WHERE Idx = #{Idx}
+    </select>
+    
+    <select id="searchInsert" resultType="mybatis.vo.ServiceAreaVO" parameterType="String">
+        Select * from ServiceArea where SAName Like concat ('%', #{name}, '%');
+    </select>
+
+    <select id="getOne" resultType="mybatis.vo.ServiceAreaVO" parameterType="String">
+        Select * from ServiceArea where Idx = #{Idx}
+    </select>
+
+    <select id="getRanking" resultType="map">
+        <!--frequency : SAKey, SAName, SADirection별로
+        묶은 레코드들의 갯수를 세는 임시 테이블-->
+        WITH frequency AS (
+        SELECT SAKey, SAName, SADirection, COUNT(*) AS cnt
+        FROM BookMark b inner join ServiceArea s on b.SAKey = s.Idx
+        GROUP BY b.SAKey, s.SAName, s.SADirection
+        ),
+        <!--ranked : frequency에서 센 cnt를
+        랭크를 rnk로 매겨주는 DENSE_RANK()함수를 쓰는 임시 테이블-->
+        ranked AS (
+        SELECT SAName, cnt, SADirection ,
+        DENSE_RANK() OVER (ORDER BY cnt DESC) AS rnk
+        FROM frequency
+        )
+        <!--ranked테이블에서 5등인 항목까지만 뽑아오기-->
+        SELECT SAName, cnt, SADirection
+        FROM ranked
+        WHERE rnk &lt;= 5
+        ORDER BY cnt DESC, SAName, SADirection
+    </select>
+
+<!--    <insert id="init" parameterType="mybatis.vo.ServiceAreaVO" useGeneratedKeys="true" keyProperty="Idx">
+        insert into ServiceArea (SAName, SADirection, WayNum, CompactParking, LargeParking, DisabledParking,
+        Address, Tel, ShopCode)
+        values
+        (#{SAName}, #{SADirection}, #{WayNum}, #{CompactParking}, #{LargeParking},
+        #{DisabledParking}, #{Address}, #{Tel}, #{ShopCode})
+        ON DUPLICATE KEY UPDATE
+        SAName = values(SAName),
+        SADirection = values(SADirection),
+        WayNum = values(WayNum),
+        CompactParking = values(CompactParking),
+        LargeParking = values(LargeParking),
+        DisabledParking = values(DisabledParking),
+        Address = values(Address),
+        Tel = values(Tel),
+        ShopCode = values(ShopCode)
+    </insert>-->
+
+    <select id="getbookmark" resultType="mybatis.vo.ServiceAreaVO" parameterType="String">
+        select * from ServiceArea sa inner join BookMark bm on sa.Idx=bm.SAKey
+        where bm.UserKey =#{n}
+    </select>
+
+    <delete id="deletebookmark" parameterType="Map">
+        DELETE FROM BookMark
+        WHERE UserKey = #{Useridx} AND SAKey = #{SAidx}
+    </delete>
+
+    <!-- 휴게소 이름과 방향으로 정확히 매칭하는 쿼리 -->
+    <select id="getByNameAndDirection" resultMap="ServiceAreaWithGasMap" parameterType="Map">
+        SELECT s.*, g.SAKey, g.Gasoline, g.Disel, g.LPG
+        FROM ServiceArea s
+        LEFT JOIN Gas g ON s.Idx = g.SAKey
+        WHERE s.SAName = #{saname} 
+        AND s.SADirection LIKE CONCAT('%', #{sadirection}, '%')
+        LIMIT 1
+    </select>
+
+    <!-- 휴게소 이름만으로 검색하는 쿼리 (방향 정보가 없는 경우 사용) -->
+    <select id="getByNameOnly" resultMap="ServiceAreaWithGasMap" parameterType="String">
+        SELECT s.*, g.SAKey, g.Gasoline, g.Disel, g.LPG
+        FROM ServiceArea s
+        LEFT JOIN Gas g ON s.Idx = g.SAKey
+        WHERE s.SAName = #{saname}
+        LIMIT 1
+    </select>
+
+    <!-- 휴게소 이름과 방향으로 정확히 매칭하는 쿼리 (Menu 포함) -->
+    <select id="getByNameAndDirectionWithMenu" resultMap="ServiceAreaWithGasAndMenuMap" parameterType="Map">
+        SELECT s.*, g.SAKey as GasSAKey, g.Gasoline, g.Disel, g.LPG,
+               m.Idx as MenuIdx, m.SAKey, m.FoodName, m.Price, m.Season, 
+               m.Recommend, m.Best, m.Premium
+        FROM (SELECT * FROM ServiceArea 
+              WHERE SAName = #{saname} 
+              AND SADirection LIKE CONCAT('%', #{sadirection}, '%')
+              LIMIT 1) s
+        LEFT JOIN Gas g ON s.Idx = g.SAKey
+        LEFT JOIN Menu m ON s.Idx = m.SAKey
+    </select>
+
+    <!-- 휴게소 이름만으로 검색하는 쿼리 (Menu 포함, 방향 정보가 없는 경우 사용) -->
+    <select id="getByNameOnlyWithMenu" resultMap="ServiceAreaWithGasAndMenuMap" parameterType="String">
+        SELECT s.*, g.SAKey as GasSAKey, g.Gasoline, g.Disel, g.LPG,
+               m.Idx as MenuIdx, m.SAKey, m.FoodName, m.Price, m.Season, 
+               m.Recommend, m.Best, m.Premium
+        FROM (SELECT * FROM ServiceArea WHERE SAName = #{saname} LIMIT 1) s
+        LEFT JOIN Gas g ON s.Idx = g.SAKey
+        LEFT JOIN Menu m ON s.Idx = m.SAKey
+    </select>
+
+    <!-- idx로 휴게소 조회 (Menu 포함) -->
+    <select id="getByIdxWithMenu" resultMap="ServiceAreaWithGasAndMenuMap" parameterType="String">
+        SELECT s.*, g.SAKey as GasSAKey, g.Gasoline, g.Disel, g.LPG,
+               m.Idx as MenuIdx, m.SAKey, m.FoodName, m.Price, m.Season, 
+               m.Recommend, m.Best, m.Premium
+        FROM ServiceArea s
+        LEFT JOIN Gas g ON s.Idx = g.SAKey
+        LEFT JOIN Menu m ON s.Idx = m.SAKey
+        WHERE s.Idx = #{Idx}
+    </select>
+
+    <!-- 🚀 퍼지 매칭을 위한 새로운 쿼리들 -->
+    
+    <!-- 부분 이름으로 검색 (LIKE 검색) - Menu 포함 -->
+    <select id="findByPartialName" resultMap="ServiceAreaWithGasAndMenuMap" parameterType="String">
+        SELECT s.*, g.SAKey as GasSAKey, g.Gasoline, g.Disel, g.LPG,
+               m.Idx as MenuIdx, m.SAKey, m.FoodName, m.Price, m.Season, 
+               m.Recommend, m.Best, m.Premium
+        FROM (SELECT * FROM ServiceArea 
+              WHERE SAName LIKE CONCAT('%', #{keyword}, '%')
+              ORDER BY LENGTH(SAName) ASC
+              LIMIT 1) s
+        LEFT JOIN Gas g ON s.Idx = g.SAKey
+        LEFT JOIN Menu m ON s.Idx = m.SAKey
+    </select>
+
+    <!-- 키워드로 검색 (휴게소 이름에서 키워드 포함 여부 확인) - Menu 포함 -->
+    <select id="findByKeywords" resultMap="ServiceAreaWithGasAndMenuMap" parameterType="String">
+        SELECT s.*, g.SAKey as GasSAKey, g.Gasoline, g.Disel, g.LPG,
+               m.Idx as MenuIdx, m.SAKey, m.FoodName, m.Price, m.Season, 
+               m.Recommend, m.Best, m.Premium
+        FROM (SELECT * FROM ServiceArea 
+              WHERE SAName LIKE CONCAT('%', #{keyword}, '%')
+              ORDER BY 
+                  CASE 
+                      WHEN SAName LIKE CONCAT(#{keyword}, '%') THEN 1
+                      WHEN SAName LIKE CONCAT('%', #{keyword}, '%') THEN 2
+                      ELSE 3
+                  END,
+                  LENGTH(SAName) ASC
+              LIMIT 1) s
+        LEFT JOIN Gas g ON s.Idx = g.SAKey
+        LEFT JOIN Menu m ON s.Idx = m.SAKey
+    </select>
+
+    <!-- 유사도 기반 검색을 위한 전체 휴게소 조회 - Menu 포함 -->
+    <select id="getAllForSimilarity" resultMap="ServiceAreaWithGasAndMenuMap">
+        SELECT s.*, g.SAKey as GasSAKey, g.Gasoline, g.Disel, g.LPG,
+               m.Idx as MenuIdx, m.SAKey, m.FoodName, m.Price, m.Season, 
+               m.Recommend, m.Best, m.Premium
+        FROM ServiceArea s
+        LEFT JOIN Gas g ON s.Idx = g.SAKey
+        LEFT JOIN Menu m ON s.Idx = m.SAKey
+        ORDER BY s.SAName
+    </select>
+</mapper>

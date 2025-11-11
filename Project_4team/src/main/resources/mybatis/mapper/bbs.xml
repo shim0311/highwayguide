@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Board">
+
+    <!-- FAQ를 제외한 공지사항 총 게시물 수를 반환하는 기능 -->
+    <select id="totalCountExceptFaq" resultType="int">
+        SELECT COUNT(*) FROM Board
+        WHERE `DELETE` = 0 AND category &lt;&gt; 'Faq'
+    </select>
+
+    <!-- FAQ 게시판의 총 게시물 수를 반환하는 기능 -->
+    <select id="totalCountFaqOnly" resultType="int">
+        SELECT COUNT(*) FROM Board
+        WHERE `DELETE` = 0 AND category = 'Faq'
+    </select>
+
+    <!-- 원글 목록: FAQ 제외 (notice.jsp용)-->
+    <select id="listExceptFaq" parameterType="Map" resultType="mybatis.vo.BbsVO">
+        SELECT * FROM(
+        SELECT @RN:=@RN+1 AS rnum, a.* FROM(
+        SELECT * From Board
+        WHERE `DELETE` = 0
+        AND category &lt;&gt; 'Faq'
+        <if test="subject != null and subject != ''">
+            AND Subject = #{subject}
+        </if>
+        ORDER BY PostNum DESC
+        ) a, (SELECT @RN:=0) b
+        ) c WHERE c.rnum BETWEEN #{begin} AND #{end}
+    </select>
+
+    <!-- 원글 목록: FAQ만 포함 (faq.jsp용)-->
+    <select id="listFaqOnly" parameterType="Map" resultType="mybatis.vo.BbsVO">
+        SELECT * FROM(
+        SELECT @RN:=@RN+1 AS rnum, a.* FROM(
+        SELECT * From Board
+        WHERE `DELETE` = 0
+        AND category = 'Faq'
+        <if test="subject != null and subject != ''">
+            AND Subject = #{subject}
+        </if>
+        ORDER BY PostNum DESC
+        ) a, (SELECT @RN:=0) b
+        ) c WHERE c.rnum BETWEEN #{begin} AND #{end}
+    </select>
+
+    <!--원글 저장-->
+    <insert id="add" parameterType="map">
+        INSERT INTO Board(subject, writer, content, FileName, category,
+        writeDate, `Delete`, Pwd)
+        VALUES(#{subject}, #{writer}, #{content}, #{FileName}, #{category},
+        NOW(), 0, #{Pwd})
+    </insert>
+
+    <!--원글 보기-->
+    <select id="getBbs" parameterType="String" resultType="mybatis.vo.BbsVO">
+        SELECT * FROM Board
+        WHERE PostNum = #{PostNum}
+    </select>
+
+    <!--원글 수정-->
+    <update id="edit" parameterType="map">
+        UPDATE Board
+        SET
+        Subject = #{subject},
+        Content = #{content},
+        Category = #{category},
+        ModDate = NOW()
+        <if test="FileName != null">
+            ,FileName = #{FileName}
+        </if>
+        WHERE PostNum = #{PostNum}
+    </update>
+
+    <!-- 원글 삭제-->
+    <update id="del" parameterType="String">
+        UPDATE Board
+        SET `Delete` = 1
+        WHERE PostNum = #{PostNum}
+    </update>
+
+    <!-- 좋아요-->
+    <update id="Like" parameterType="String">
+        UPDATE Board
+        SET ThumbsUp = ThumbsUp + 1
+        WHERE PostNum = #{PostNum}
+    </update>
+
+    <!-- 싫어요-->
+    <update id="Hate" parameterType="String">
+        UPDATE Board
+        SET ThumbsDown = ThumbsDown + 1
+        WHERE PostNum = #{PostNum}
+    </update>
+</mapper>

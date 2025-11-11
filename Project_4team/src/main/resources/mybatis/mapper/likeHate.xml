@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="LikeHate">
+
+    <select id="checkReaction" resultType="int" parameterType="map">
+        SELECT COUNT(*)
+        FROM LikeHate WHERE PostNum = #{postNum} AND UserKey = #{userKey}
+    </select>
+
+    <insert id="addReaction" parameterType="map">
+        INSERT INTO LikeHate (UserKey, PostNum, ThumbsUp, ThumbsDown)
+        VALUES (#{userKey}, #{postNum}, #{thumbsUp}, #{thumbsDown})
+    </insert>
+
+    <select id="getLikeCount" resultType="int" parameterType="String">
+        SELECT IFNULL(SUM(ThumbsUp), 0) FROM LikeHate WHERE PostNum = #{value}
+    </select>
+
+    <select id="getHateCount" resultType="int" parameterType="String">
+        SELECT IFNULL(SUM(ThumbsDown), 0) FROM LikeHate WHERE PostNum = #{value}
+    </select>
+</mapper>

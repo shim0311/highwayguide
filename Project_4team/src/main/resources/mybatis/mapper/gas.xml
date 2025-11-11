@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="gas">
+    <select id="getGas" parameterType="String" resultType="mybatis.vo.GasVO">
+        select * from Gas
+        WHERE SAKey = #{idx}
+    </select>
+
+    <!--저장된 SAKey 수 카운트-->
+    <select id="selectCntSAKey" parameterType="String" resultType="int">
+        SELECT COUNT(*)
+        FROM Gas
+        WHERE SAKey = #{SAKey}
+    </select>
+
+    <!--주유소 유종별 가격정보 DB에 저장-->
+    <insert id="insertGasPrices" parameterType="mybatis.vo.GasVO">
+        INSERT INTO Gas (SAKey, Gasoline, Disel, LPG)
+        VALUES (#{SAKey}, #{Gasoline}, #{Disel}, #{LPG})
+    </insert>
+
+    <!--주유소 유종별 가격정보 업데이트-->
+    <update id="updateGasPrices" parameterType="mybatis.vo.GasVO">
+        UPDATE Gas
+        SET
+            Gasoline = #{Gasoline},
+            Disel = #{Disel},
+            LPG = #{LPG}
+        WHERE
+            SAkey = #{SAKey}
+    </update>
+
+</mapper>

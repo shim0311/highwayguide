@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="crawlingdata">
+
+    <!-- CrawlingData 테이블에 리뷰 데이터 삽입 -->
+    <insert id="insertCrawlingData" parameterType="mybatis.vo.CReviewVO">
+        INSERT INTO CrawlingData (SAKey, Writer, Content, ImageUrl)
+        VALUES (#{SAKey}, #{Writer}, #{Content}, #{ImageUrl})
+    </insert>
+
+    <!-- 특정 인덱스로 리뷰 데이터 조회 -->
+    <select id="getCrawlingDataByIdx" parameterType="String" resultType="mybatis.vo.CReviewVO">
+        SELECT * FROM CrawlingData 
+        WHERE Idx = #{Idx}
+    </select>
+
+    <!-- 모든 리뷰 데이터 조회 -->
+    <select id="getAllCrawlingData" resultType="mybatis.vo.CReviewVO">
+        SELECT * FROM CrawlingData 
+        ORDER BY Idx ASC
+    </select>
+
+    <!-- 휴게소 키로 리뷰 데이터 조회 -->
+    <select id="getCrawlingDataBySAKey" parameterType="String" resultType="mybatis.vo.CReviewVO">
+        SELECT * FROM CrawlingData 
+        WHERE SAKey = #{SAKey}
+        ORDER BY Idx ASC
+    </select>
+
+    <!-- 작성자로 리뷰 데이터 조회 -->
+    <select id="getCrawlingDataByWriter" parameterType="String" resultType="mybatis.vo.CReviewVO">
+        SELECT * FROM CrawlingData 
+        WHERE Writer = #{Writer}
+        ORDER BY Idx ASC
+    </select>
+
+    <!-- 내용 검색으로 리뷰 데이터 조회 -->
+    <select id="searchCrawlingDataByContent" parameterType="String" resultType="mybatis.vo.CReviewVO">
+        SELECT * FROM CrawlingData 
+        WHERE Content LIKE CONCAT('%', #{keyword}, '%')
+        ORDER BY Idx ASC
+    </select>
+
+    <!-- 특정 휴게소의 리뷰 개수 조회 -->
+    <select id="getCrawlingDataCountBySAKey" parameterType="String" resultType="int">
+        SELECT COUNT(*) FROM CrawlingData 
+        WHERE SAKey = #{SAKey}
+    </select>
+
+    <!-- 전체 리뷰 개수 조회 -->
+    <select id="getTotalCrawlingDataCount" resultType="int">
+        SELECT COUNT(*) FROM CrawlingData
+    </select>
+
+    <!-- 특정 인덱스의 리뷰 데이터 수정 -->
+    <update id="updateCrawlingData" parameterType="mybatis.vo.CReviewVO">
+        UPDATE CrawlingData 
+        SET SAKey = #{SAKey},
+            Writer = #{Writer},
+            Content = #{Content},
+            ImageUrl = #{ImageUrl}
+        WHERE Idx = #{Idx}
+    </update>
+
+    <!-- 특정 인덱스의 리뷰 데이터 삭제 -->
+    <delete id="deleteCrawlingData" parameterType="String">
+        DELETE FROM CrawlingData 
+        WHERE Idx = #{Idx}
+    </delete>
+
+    <!-- 특정 휴게소의 모든 리뷰 데이터 삭제 -->
+    <delete id="deleteCrawlingDataBySAKey" parameterType="String">
+        DELETE FROM CrawlingData 
+        WHERE SAKey = #{SAKey}
+    </delete>
+
+    <!-- 페이징을 위한 리뷰 데이터 조회 -->
+    <select id="getCrawlingDataWithPaging" parameterType="map" resultType="mybatis.vo.CReviewVO">
+        SELECT * FROM CrawlingData 
+        ORDER BY Idx ASC
+        LIMIT #{begin}, #{end}
+    </select>
+
+    <!-- 휴게소별 리뷰 통계 조회 -->
+    <select id="getCrawlingDataStatsBySAKey" parameterType="String" resultType="map">
+        SELECT 
+            SAKey,
+            COUNT(*) as reviewCount,
+            COUNT(DISTINCT Writer) as uniqueWriters
+        FROM CrawlingData 
+        WHERE SAKey = #{SAKey}
+        GROUP BY SAKey
+    </select>
+
+    <!-- ServiceArea와 조인하여 모든 리뷰 데이터 조회 -->
+    <select id="getAllReviewsWithServiceArea" resultType="mybatis.vo.CReviewVO">
+        SELECT 
+            c.Idx,
+            c.SAKey,
+            c.Writer,
+            c.Content,
+            c.ImageUrl,
+            s.SAName as serviceAreaName,
+            s.Address as serviceAreaAddress,
+            s.Star as serviceAreaStar,
+            s.Convenience as serviceAreaConvenience
+        FROM CrawlingData c
+        LEFT JOIN ServiceArea s ON c.SAKey = s.Idx
+        ORDER BY c.Idx DESC
+    </select>
+
+    <!-- 특정 휴게소의 리뷰 데이터를 ServiceArea와 조인하여 조회 -->
+    <select id="getReviewsBySAKeyWithServiceArea" parameterType="String" resultType="mybatis.vo.CReviewVO">
+        SELECT 
+            c.Idx,
+            c.SAKey,
+            c.Writer,
+            c.Content,
+            c.ImageUrl,
+            s.SAName as serviceAreaName,
+            s.Address as serviceAreaAddress,
+            s.Star as serviceAreaStar,
+            s.Convenience as serviceAreaConvenience
+        FROM CrawlingData c
+        LEFT JOIN ServiceArea s ON c.SAKey = s.Idx
+        WHERE c.SAKey = #{SAKey}
+        ORDER BY c.Idx DESC
+    </select>
+
+    <!-- 페이징을 위한 리뷰 데이터 조회 (ServiceArea 조인) -->
+    <select id="getReviewsWithPagingAndServiceArea" parameterType="map" resultType="mybatis.vo.CReviewVO">
+        SELECT 
+            c.Idx,
+            c.SAKey,
+            c.Writer,
+            c.Content,
+            c.ImageUrl,
+            s.SAName as serviceAreaName,
+            s.Address as serviceAreaAddress,
+            s.Star as serviceAreaStar,
+            s.Convenience as serviceAreaConvenience
+        FROM CrawlingData c
+        LEFT JOIN ServiceArea s ON c.SAKey = s.Idx
+        ORDER BY c.Idx DESC
+        LIMIT #{begin}, #{end}
+    </select>
+
+    <!-- 고유 휴게소 수 조회 -->
+    <select id="getUniqueSAKeyCount" resultType="int">
+        SELECT COUNT(DISTINCT SAKey) FROM CrawlingData
+    </select>
+
+    <!-- 고유 작성자 수 조회 -->
+    <select id="getUniqueWriterCount" resultType="int">
+        SELECT COUNT(DISTINCT Writer) FROM CrawlingData
+    </select>
+
+    <!-- 휴게소 이름으로 리뷰 검색 -->
+    <select id="searchReviewsByServiceAreaName" parameterType="String" resultType="mybatis.vo.CReviewVO">
+        SELECT 
+            c.Idx,
+            c.SAKey,
+            c.Writer,
+            c.Content,
+            c.ImageUrl,
+            s.SAName as serviceAreaName,
+            s.Address as serviceAreaAddress,
+            s.Star as serviceAreaStar,
+            s.Convenience as serviceAreaConvenience
+        FROM CrawlingData c
+        LEFT JOIN ServiceArea s ON c.SAKey = s.Idx
+        WHERE s.SAName LIKE CONCAT('%', #{searchKeyword}, '%')
+        ORDER BY c.Idx DESC
+    </select>
+
+    <!-- 검색 결과에 대한 페이징 리뷰 데이터 조회 -->
+    <select id="getReviewsWithPagingAndSearch" parameterType="map" resultType="mybatis.vo.CReviewVO">
+        SELECT 
+            c.Idx,
+            c.SAKey,
+            c.Writer,
+            c.Content,
+            c.ImageUrl,
+            s.SAName as serviceAreaName,
+            s.Address as serviceAreaAddress,
+            s.Star as serviceAreaStar,
+            s.Convenience as serviceAreaConvenience
+        FROM CrawlingData c
+        LEFT JOIN ServiceArea s ON c.SAKey = s.Idx
+        WHERE s.SAName LIKE CONCAT('%', #{searchKeyword}, '%')
+        ORDER BY c.Idx DESC
+        LIMIT #{offset}, #{limit}
+    </select>
+
+    <!-- 검색 결과 개수 조회 -->
+    <select id="getSearchResultCount" parameterType="String" resultType="int">
+        SELECT COUNT(*)
+        FROM CrawlingData c
+        LEFT JOIN ServiceArea s ON c.SAKey = s.Idx
+        WHERE s.SAName LIKE CONCAT('%', #{searchKeyword}, '%')
+    </select>
+
+</mapper>

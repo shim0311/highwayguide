@@ -1,0 +1,74 @@
+# =============================================================================
+# application.properties 템플릿
+# =============================================================================
+# 사용법:
+#   1. 이 파일을 복사하여 src/main/resources/application.properties 생성
+#   2. 모든 "your-xxx" 부분을 실제 값으로 변경
+#   3. Git에 커밋하지 마세요! (.gitignore에 이미 추가되어 있음)
+# =============================================================================
+
+# ============================================
+# Google Mail (이메일 인증 - 비밀번호 찾기)
+# ============================================
+# Gmail App Password 생성: https://myaccount.google.com/apppasswords
+GOOGLE_SENDER_MAIL=your-email@gmail.com
+GOOGLE_APPLICATION_PASSWORD=your-16-char-app-password
+
+# ============================================
+# Naver OAuth (소셜 로그인)
+# ============================================
+# Naver Developers: https://developers.naver.com/apps
+NAVER_CLIENT_ID=your-naver-client-id
+NAVER_CLIENT_SECRET=your-naver-client-secret
+
+# ============================================
+# Kakao OAuth & API (소셜 로그인, 지도)
+# ============================================
+# Kakao Developers: https://developers.kakao.com/
+KAKAO_CLIENT_ID=your-kakao-client-id
+KAKAO_API_KEY=your-kakao-rest-api-key
+
+# ============================================
+# Expressway API (고속도로 공공데이터)
+# ============================================
+# 고속도로 공공데이터 포털에서 발급
+EXPRESSWAY_ID=your-expressway-api-key
+
+# ============================================
+# TMap API (지도)
+# ============================================
+tmap.appkey=your-tmap-api-key
+
+# ============================================
+# AWS S3 (이미지 업로드)
+# ============================================
+# AWS IAM에서 S3 접근 권한을 가진 사용자 생성 필요
+aws.accessKeyId=your-aws-access-key-id
+aws.secretAccessKey=your-aws-secret-access-key
+aws.s3.bucketName=your-bucket-name
+aws.s3.bucketUrl=https://your-bucket-name.s3.ap-northeast-2.amazonaws.com/
+
+# ============================================
+# Database Configuration (MyBatis용)
+# ============================================
+# RDS MySQL 정보
+db.driver=com.mysql.cj.jdbc.Driver
+db.url=jdbc:mysql://your-rds-endpoint.ap-northeast-2.rds.amazonaws.com:3306/my_app_db?useSSL=true&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+db.username=admin
+db.password=your-secure-password
+
+# ============================================
+# Server Configuration
+# ============================================
+# 로컬 개발 환경
+# server.domain=localhost
+# server.port=8080
+# server.context=/Project_4team_war_exploded
+
+# AWS 운영 환경 (배포 시 아래 주석 해제하고 위 3줄 주석 처리)
+server.domain=your-domain.com
+server.port=80
+server.context=
+
+# OAuth Redirect URI (자동 생성됨)
+oauth.redirect.base=http://${server.domain}:${server.port}${server.context}
