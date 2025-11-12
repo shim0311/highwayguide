@@ -27,8 +27,8 @@ jobs:
     # 3. application.properties 생성
     - name: Create application.properties
       run: |
-        mkdir -p src/main/resources
-        cat > src/main/resources/application.properties << EOF
+        mkdir -p Project_4team/src/main/resources
+        cat > Project_4team/src/main/resources/application.properties << EOF
         # Database Configuration
         db.driver=com.mysql.cj.jdbc.Driver
         db.url=${{ secrets.DB_URL }}
@@ -71,8 +71,8 @@ jobs:
     # 4. conf.xml 생성
     - name: Create MyBatis conf.xml
       run: |
-        mkdir -p src/main/resources/mybatis/config
-        cat > src/main/resources/mybatis/config/conf.xml << 'EOF'
+        mkdir -p Project_4team/src/main/resources/mybatis/config
+        cat > Project_4team/src/main/resources/mybatis/config/conf.xml << 'EOF'
         <?xml version="1.0" encoding="UTF-8"?>
         <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
             "http://mybatis.org/dtd/mybatis-3-config.dtd">
@@ -119,17 +119,18 @@ jobs:
 
     # 5. Maven 빌드
     - name: Build with Maven
+      working-directory: Project_4team
       run: mvn clean package -DskipTests
 
     # 6. WAR 파일 확인
     - name: Verify WAR file
       run: |
-        ls -lh target/*.war
+        ls -lh Project_4team/target/*.war
         echo "WAR file created successfully"
 
     # 7. EC2에 배포 (SSH)
     - name: Deploy to EC2
-      if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+      if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' || github.ref == 'refs/heads/dev')
       env:
         PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
         HOST: ${{ secrets.EC2_HOST }}
@@ -141,7 +142,7 @@ jobs:
 
         # WAR 파일 전송
         scp -i private_key.pem -o StrictHostKeyChecking=no \
-          target/*.war $USER@$HOST:/tmp/app.war
+          Project_4team/target/*.war $USER@$HOST:/tmp/app.war
 
         # 서버에서 배포
         ssh -i private_key.pem -o StrictHostKeyChecking=no $USER@$HOST << 'ENDSSH'
@@ -149,11 +150,11 @@ jobs:
           sudo systemctl stop tomcat9
 
           # 기존 애플리케이션 제거
-          sudo rm -rf /var/lib/tomcat9/webapps/ROOT
-          sudo rm -f /var/lib/tomcat9/webapps/ROOT.war
+          sudo rm -rf /opt/tomcat9/webapps/ROOT
+          sudo rm -f /opt/tomcat9/webapps/ROOT.war
 
           # 새 WAR 파일 배포
-          sudo mv /tmp/app.war /var/lib/tomcat9/webapps/ROOT.war
+          sudo mv /tmp/app.war /opt/tomcat9/webapps/ROOT.war
 
           # Tomcat 시작
           sudo systemctl start tomcat9
