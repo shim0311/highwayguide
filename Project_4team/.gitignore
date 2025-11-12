@@ -36,7 +36,7 @@ build/
 
 ### Mac OS ###
 .DS_Store
-
+application.properties
 ### 민감정보 파일 (AWS 배포 관련) ###
 # Java 설정 파일
 src/main/resources/mybatis/config/conf.xml
