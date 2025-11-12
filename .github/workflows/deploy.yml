@@ -140,6 +140,12 @@ jobs:
         echo "$PRIVATE_KEY" > private_key.pem
         chmod 600 private_key.pem
 
+        # 키 검증
+        echo "Verifying SSH key format..."
+        head -1 private_key.pem
+        tail -1 private_key.pem
+        ssh-keygen -y -f private_key.pem > /dev/null && echo "SSH key is valid" || echo "SSH key is INVALID"
+
         # WAR 파일 전송
         scp -i private_key.pem -o StrictHostKeyChecking=no \
           Project_4team/target/*.war $USER@$HOST:/tmp/app.war
