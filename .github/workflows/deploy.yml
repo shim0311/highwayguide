@@ -148,8 +148,11 @@ jobs:
         echo "Public key fingerprint from PEM:"
         ssh-keygen -y -f private_key.pem | ssh-keygen -lf - || echo "Failed to extract public key"
 
-        echo "Testing SSH connection with verbose output:"
-        ssh -vvv -i private_key.pem -o StrictHostKeyChecking=no -o ConnectTimeout=10 $USER@$HOST "echo 'Connection successful'" 2>&1 | tail -20
+        echo "Extracted public key:"
+        ssh-keygen -y -f private_key.pem
+
+        echo "Testing basic SSH connection:"
+        ssh -i private_key.pem -o StrictHostKeyChecking=no -o ConnectTimeout=10 $USER@$HOST "echo 'Connection successful'" || echo "SSH connection failed"
 
         # WAR 파일 전송
         scp -i private_key.pem -o StrictHostKeyChecking=no \
