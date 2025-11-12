@@ -136,23 +136,19 @@ jobs:
         HOST: ${{ secrets.EC2_HOST }}
         USER: ${{ secrets.EC2_USER }}
       run: |
+        # Debug: Show connection details (masked values shown as ***)
+        echo "Connecting to: $USER@$HOST"
+        echo "Host length: ${#HOST}"
+        echo "User length: ${#USER}"
+
         # SSH 키 설정
         printf '%s\n' "$PRIVATE_KEY" > private_key.pem
         chmod 600 private_key.pem
 
         # 키 검증
-        echo "Verifying SSH key format..."
-        head -1 private_key.pem
-        tail -1 private_key.pem
-        wc -l private_key.pem
-        echo "Public key fingerprint from PEM:"
-        ssh-keygen -y -f private_key.pem | ssh-keygen -lf - || echo "Failed to extract public key"
-
-        echo "Extracted public key:"
-        ssh-keygen -y -f private_key.pem
-
-        echo "Testing basic SSH connection:"
-        ssh -i private_key.pem -o StrictHostKeyChecking=no -o ConnectTimeout=10 $USER@$HOST "echo 'Connection successful'" || echo "SSH connection failed"
+        echo "Key has $(wc -l < private_key.pem) lines"
+        ssh-keygen -y -f private_key.pem > public_key.pub
+        echo "Public key extracted successfully"
 
         # WAR 파일 전송
         scp -i private_key.pem -o StrictHostKeyChecking=no \
