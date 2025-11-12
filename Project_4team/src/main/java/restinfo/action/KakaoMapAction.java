@@ -44,7 +44,7 @@ public class KakaoMapAction implements Action {
 				request.setAttribute("origin", origin);
 				request.setAttribute("destination", destination);
 				// forwardTo와 관계없이 index.jsp로 돌아가기
-				return "Controller";
+				return "index.jsp";
 			}
 			// 카카오 모빌리티 API 호출
 			JSONObject routeData = callKakaoMobilityAPI(originCoords, destinationCoords, priority,
@@ -59,9 +59,9 @@ public class KakaoMapAction implements Action {
 				// 데이터는 이미 processRouteData에서 request에 저장됨
 				return "FORWARD_TO_RESTAREA";
 			}
-			
-			// 일반적인 경우 (forwardTo가 없거나 다른 값)에는 Controller로 이동
-			return "Controller";
+
+			// 일반적인 경우 (forwardTo가 없거나 다른 값)에는 MapInfo.jsp로 이동
+			return "MapInfo.jsp";
 			
 		} catch (Exception e) {
 			if ("restArea".equalsIgnoreCase(forwardTo)) {
@@ -70,9 +70,7 @@ public class KakaoMapAction implements Action {
 			}
 			request.setAttribute("error", "서버 오류");
 			request.setAttribute("errorMessage", e.getMessage());
-			// "Controller"를 반환하면 컨트롤러가 해당 문자열을 JSP 파일명으로 인식하여 Controller.jsp를 찾게 됩니다.
-			// 만약 Controller.java 액션을 실행하려면 별도의 포워딩 로직이나 다른 방식이 필요합니다.
-			return "Controller";
+			return "index.jsp";
 		}
 	}
 
