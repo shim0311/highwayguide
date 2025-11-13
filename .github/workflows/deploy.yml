@@ -128,64 +128,7 @@ jobs:
         ls -lh Project_4team/target/*.war
         echo "WAR file created successfully"
 
-    # 7. EC2 연결 테스트
-    - name: Test EC2 Connection
-      if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' || github.ref == 'refs/heads/dev')
-      env:
-        PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
-        HOST: ${{ secrets.EC2_HOST }}
-        USER: ${{ secrets.EC2_USER }}
-      run: |
-        echo "🔍 EC2 연결 테스트 시작..."
-        echo "Target: $USER@$HOST"
-
-        # SSH 키 설정
-        printf '%s\n' "$PRIVATE_KEY" > private_key.pem
-        chmod 600 private_key.pem
-
-        # 키 검증
-        echo "✓ SSH 키 파일 생성: $(wc -l < private_key.pem) lines"
-        if ssh-keygen -y -f private_key.pem > /dev/null 2>&1; then
-          echo "✓ SSH 키 검증 성공"
-        else
-          echo "❌ SSH 키 검증 실패"
-          exit 1
-        fi
-
-        # 네트워크 연결 테스트
-        echo "🌐 네트워크 연결 테스트..."
-        if timeout 10 nc -zv $HOST 22 2>&1; then
-          echo "✓ 포트 22 연결 가능"
-        else
-          echo "❌ 포트 22 연결 실패 (타임아웃)"
-          echo ""
-          echo "💡 문제 해결 방법:"
-          echo "1. EC2 인스턴스가 실행 중인지 확인"
-          echo "2. 보안 그룹에서 포트 22 허용 확인"
-          echo "3. EC2_HOST 값이 최신 퍼블릭 IP인지 확인"
-          echo "4. 트러블슈팅 가이드 참고: Project_4team/docs/TROUBLESHOOTING_SSH.md"
-          rm -f private_key.pem
-          exit 1
-        fi
-
-        # SSH 연결 테스트
-        echo "🔐 SSH 연결 테스트..."
-        if timeout 15 ssh -i private_key.pem -o StrictHostKeyChecking=no -o ConnectTimeout=10 $USER@$HOST "echo '✓ SSH 연결 성공'"; then
-          echo "✅ EC2 연결 테스트 통과"
-        else
-          echo "❌ SSH 인증 실패"
-          echo ""
-          echo "💡 가능한 원인:"
-          echo "1. EC2_SSH_KEY 값이 올바른지 확인"
-          echo "2. EC2_USER 값 확인 (ubuntu/ec2-user)"
-          echo "3. SSH 키가 EC2 인스턴스에 등록되어 있는지 확인"
-          rm -f private_key.pem
-          exit 1
-        fi
-
-        rm -f private_key.pem
-
-    # 8. EC2에 배포 (SSH)
+    # 7. EC2에 배포 (SSH)
     - name: Deploy to EC2
       if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' || github.ref == 'refs/heads/dev')
       env:
@@ -247,7 +190,7 @@ jobs:
         rm -f private_key.pem
         echo "✅ 배포 완료!"
 
-    # 9. 배포 결과 알림
+    # 8. 배포 결과 알림
     - name: Deployment status
       if: always()
       run: |
